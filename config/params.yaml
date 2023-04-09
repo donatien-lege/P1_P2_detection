@@ -1,0 +1,20 @@
+#inputs standardized length
+size: 180
+
+models:
+  - MLP
+  - LSTM
+  - CNN
+  - LSTMFCN
+
+# training hyperparameters
+batch: 32
+l_rate: 0.001
+split: 0.9
+epochs: 200
+
+correct:
+  - product
+  - nothing
+
+
