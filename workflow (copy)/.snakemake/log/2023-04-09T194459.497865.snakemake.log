@@ -1,0 +1,34 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job stats:
+job      count    min threads    max threads
+-----  -------  -------------  -------------
+all          1              1              1
+merge        1              1              1
+total        2              1              1
+
+Select jobs to execute...
+
+[Sun Apr  9 19:45:00 2023]
+rule merge:
+    input: ../results/errors/synth_test_1_MLP_product.csv, ../results/errors/synth_test_1_MLP_nothing.csv, ../results/errors/synth_test_1_LSTM_product.csv, ../results/errors/synth_test_1_LSTM_nothing.csv, ../results/errors/synth_test_1_CNN_product.csv, ../results/errors/synth_test_1_CNN_nothing.csv, ../results/errors/synth_test_1_LSTMFCN_product.csv, ../results/errors/synth_test_1_LSTMFCN_nothing.csv, ../results/errors/synth_test_0_MLP_product.csv, ../results/errors/synth_test_0_MLP_nothing.csv, ../results/errors/synth_test_0_LSTM_product.csv, ../results/errors/synth_test_0_LSTM_nothing.csv, ../results/errors/synth_test_0_CNN_product.csv, ../results/errors/synth_test_0_CNN_nothing.csv, ../results/errors/synth_test_0_LSTMFCN_product.csv, ../results/errors/synth_test_0_LSTMFCN_nothing.csv
+    output: ../results/graphs/hz.png, ../results/graphs/vt.png, ../results/graphs/ratio.png, ../results/graphs/clasf.png, ../results/graphs/metrics.csv
+    log: logs/merge/merge.log
+    jobid: 1
+    reason: Missing output files: ../results/graphs/clasf.png, ../results/graphs/ratio.png, ../results/graphs/hz.png, ../results/graphs/vt.png, ../results/graphs/metrics.csv
+    resources: tmpdir=/tmp
+
+[Sun Apr  9 19:45:00 2023]
+Error in rule merge:
+    jobid: 1
+    input: ../results/errors/synth_test_1_MLP_product.csv, ../results/errors/synth_test_1_MLP_nothing.csv, ../results/errors/synth_test_1_LSTM_product.csv, ../results/errors/synth_test_1_LSTM_nothing.csv, ../results/errors/synth_test_1_CNN_product.csv, ../results/errors/synth_test_1_CNN_nothing.csv, ../results/errors/synth_test_1_LSTMFCN_product.csv, ../results/errors/synth_test_1_LSTMFCN_nothing.csv, ../results/errors/synth_test_0_MLP_product.csv, ../results/errors/synth_test_0_MLP_nothing.csv, ../results/errors/synth_test_0_LSTM_product.csv, ../results/errors/synth_test_0_LSTM_nothing.csv, ../results/errors/synth_test_0_CNN_product.csv, ../results/errors/synth_test_0_CNN_nothing.csv, ../results/errors/synth_test_0_LSTMFCN_product.csv, ../results/errors/synth_test_0_LSTMFCN_nothing.csv
+    output: ../results/graphs/hz.png, ../results/graphs/vt.png, ../results/graphs/ratio.png, ../results/graphs/clasf.png, ../results/graphs/metrics.csv
+    log: logs/merge/merge.log (check log file(s) for error details)
+    conda-env: /home/donatien/Desktop/pipeline/workflow/.snakemake/conda/688cde4261b15e40d69490aa25d08964_
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-04-09T194459.497865.snakemake.log

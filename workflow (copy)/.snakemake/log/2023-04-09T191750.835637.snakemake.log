@@ -1,0 +1,275 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job stats:
+job           count    min threads    max threads
+----------  -------  -------------  -------------
+all               1              1              1
+graph_loss        1              1              1
+merge             1              1              1
+perfs            16              1              1
+total            19              1              1
+
+Select jobs to execute...
+
+[Sun Apr  9 19:17:51 2023]
+rule perfs:
+    input: ../results/preds/synth_test_0_MLP_product.npy, ../resources/test/pulses/synth_test_0.npy, ../resources/test/annots/synth_test_0.npy
+    output: ../results/errors/synth_test_0_MLP_product.csv
+    log: logs/perfs/synth_test_0_MLP_product.log
+    jobid: 29
+    reason: Code has changed since last execution
+    wildcards: f=synth_test_0, nn=MLP, c=product
+    resources: tmpdir=/tmp
+
+[Sun Apr  9 19:17:51 2023]
+rule perfs:
+    input: ../results/preds/synth_test_1_LSTM_product.npy, ../resources/test/pulses/synth_test_1.npy, ../resources/test/annots/synth_test_1.npy
+    output: ../results/errors/synth_test_1_LSTM_product.csv
+    log: logs/perfs/synth_test_1_LSTM_product.log
+    jobid: 11
+    reason: Code has changed since last execution
+    wildcards: f=synth_test_1, nn=LSTM, c=product
+    resources: tmpdir=/tmp
+
+[Sun Apr  9 19:17:51 2023]
+rule perfs:
+    input: ../results/preds/synth_test_0_LSTMFCN_nothing.npy, ../resources/test/pulses/synth_test_0.npy, ../resources/test/annots/synth_test_0.npy
+    output: ../results/errors/synth_test_0_LSTMFCN_nothing.csv
+    log: logs/perfs/synth_test_0_LSTMFCN_nothing.log
+    jobid: 48
+    reason: Code has changed since last execution
+    wildcards: f=synth_test_0, nn=LSTMFCN, c=nothing
+    resources: tmpdir=/tmp
+
+[Sun Apr  9 19:17:51 2023]
+rule perfs:
+    input: ../results/preds/synth_test_0_MLP_nothing.npy, ../resources/test/pulses/synth_test_0.npy, ../resources/test/annots/synth_test_0.npy
+    output: ../results/errors/synth_test_0_MLP_nothing.csv
+    log: logs/perfs/synth_test_0_MLP_nothing.log
+    jobid: 33
+    reason: Code has changed since last execution
+    wildcards: f=synth_test_0, nn=MLP, c=nothing
+    resources: tmpdir=/tmp
+
+[Sun Apr  9 19:17:51 2023]
+rule perfs:
+    input: ../results/preds/synth_test_1_LSTMFCN_product.npy, ../resources/test/pulses/synth_test_1.npy, ../resources/test/annots/synth_test_1.npy
+    output: ../results/errors/synth_test_1_LSTMFCN_product.csv
+    log: logs/perfs/synth_test_1_LSTMFCN_product.log
+    jobid: 23
+    reason: Code has changed since last execution
+    wildcards: f=synth_test_1, nn=LSTMFCN, c=product
+    resources: tmpdir=/tmp
+
+[Sun Apr  9 19:17:51 2023]
+rule perfs:
+    input: ../results/preds/synth_test_1_CNN_product.npy, ../resources/test/pulses/synth_test_1.npy, ../resources/test/annots/synth_test_1.npy
+    output: ../results/errors/synth_test_1_CNN_product.csv
+    log: logs/perfs/synth_test_1_CNN_product.log
+    jobid: 17
+    reason: Code has changed since last execution
+    wildcards: f=synth_test_1, nn=CNN, c=product
+    resources: tmpdir=/tmp
+
+[Sun Apr  9 19:17:51 2023]
+rule perfs:
+    input: ../results/preds/synth_test_0_LSTMFCN_product.npy, ../resources/test/pulses/synth_test_0.npy, ../resources/test/annots/synth_test_0.npy
+    output: ../results/errors/synth_test_0_LSTMFCN_product.csv
+    log: logs/perfs/synth_test_0_LSTMFCN_product.log
+    jobid: 45
+    reason: Code has changed since last execution
+    wildcards: f=synth_test_0, nn=LSTMFCN, c=product
+    resources: tmpdir=/tmp
+
+[Sun Apr  9 19:17:51 2023]
+rule perfs:
+    input: ../results/preds/synth_test_1_MLP_product.npy, ../resources/test/pulses/synth_test_1.npy, ../resources/test/annots/synth_test_1.npy
+    output: ../results/errors/synth_test_1_MLP_product.csv
+    log: logs/perfs/synth_test_1_MLP_product.log
+    jobid: 2
+    reason: Code has changed since last execution
+    wildcards: f=synth_test_1, nn=MLP, c=product
+    resources: tmpdir=/tmp
+
+[Sun Apr  9 19:17:52 2023]
+Finished job 11.
+1 of 19 steps (5%) done
+Select jobs to execute...
+
+[Sun Apr  9 19:17:52 2023]
+rule perfs:
+    input: ../results/preds/synth_test_0_LSTM_nothing.npy, ../resources/test/pulses/synth_test_0.npy, ../resources/test/annots/synth_test_0.npy
+    output: ../results/errors/synth_test_0_LSTM_nothing.csv
+    log: logs/perfs/synth_test_0_LSTM_nothing.log
+    jobid: 38
+    reason: Code has changed since last execution
+    wildcards: f=synth_test_0, nn=LSTM, c=nothing
+    resources: tmpdir=/tmp
+
+[Sun Apr  9 19:17:52 2023]
+Finished job 29.
+2 of 19 steps (11%) done
+Select jobs to execute...
+
+[Sun Apr  9 19:17:52 2023]
+rule perfs:
+    input: ../results/preds/synth_test_1_CNN_nothing.npy, ../resources/test/pulses/synth_test_1.npy, ../resources/test/annots/synth_test_1.npy
+    output: ../results/errors/synth_test_1_CNN_nothing.csv
+    log: logs/perfs/synth_test_1_CNN_nothing.log
+    jobid: 21
+    reason: Code has changed since last execution
+    wildcards: f=synth_test_1, nn=CNN, c=nothing
+    resources: tmpdir=/tmp
+
+[Sun Apr  9 19:17:52 2023]
+Finished job 45.
+3 of 19 steps (16%) done
+[Sun Apr  9 19:17:52 2023]
+Finished job 23.
+4 of 19 steps (21%) done
+Select jobs to execute...
+
+[Sun Apr  9 19:17:52 2023]
+rule perfs:
+    input: ../results/preds/synth_test_0_CNN_nothing.npy, ../resources/test/pulses/synth_test_0.npy, ../resources/test/annots/synth_test_0.npy
+    output: ../results/errors/synth_test_0_CNN_nothing.csv
+    log: logs/perfs/synth_test_0_CNN_nothing.log
+    jobid: 43
+    reason: Code has changed since last execution
+    wildcards: f=synth_test_0, nn=CNN, c=nothing
+    resources: tmpdir=/tmp
+
+[Sun Apr  9 19:17:52 2023]
+rule perfs:
+    input: ../results/preds/synth_test_1_MLP_nothing.npy, ../resources/test/pulses/synth_test_1.npy, ../resources/test/annots/synth_test_1.npy
+    output: ../results/errors/synth_test_1_MLP_nothing.csv
+    log: logs/perfs/synth_test_1_MLP_nothing.log
+    jobid: 9
+    reason: Code has changed since last execution
+    wildcards: f=synth_test_1, nn=MLP, c=nothing
+    resources: tmpdir=/tmp
+
+Select jobs to execute...
+[Sun Apr  9 19:17:53 2023]
+Finished job 17.
+5 of 19 steps (26%) done
+[Sun Apr  9 19:17:53 2023]
+Finished job 2.
+6 of 19 steps (32%) done
+
+[Sun Apr  9 19:17:53 2023]
+rule perfs:
+    input: ../results/preds/synth_test_1_LSTMFCN_nothing.npy, ../resources/test/pulses/synth_test_1.npy, ../resources/test/annots/synth_test_1.npy
+    output: ../results/errors/synth_test_1_LSTMFCN_nothing.csv
+    log: logs/perfs/synth_test_1_LSTMFCN_nothing.log
+    jobid: 27
+    reason: Code has changed since last execution
+    wildcards: f=synth_test_1, nn=LSTMFCN, c=nothing
+    resources: tmpdir=/tmp
+
+[Sun Apr  9 19:17:53 2023]
+rule perfs:
+    input: ../results/preds/synth_test_0_LSTM_product.npy, ../resources/test/pulses/synth_test_0.npy, ../resources/test/annots/synth_test_0.npy
+    output: ../results/errors/synth_test_0_LSTM_product.csv
+    log: logs/perfs/synth_test_0_LSTM_product.log
+    jobid: 35
+    reason: Code has changed since last execution
+    wildcards: f=synth_test_0, nn=LSTM, c=product
+    resources: tmpdir=/tmp
+
+[Sun Apr  9 19:17:53 2023]
+Finished job 48.
+7 of 19 steps (37%) done
+[Sun Apr  9 19:17:53 2023]
+Finished job 33.
+8 of 19 steps (42%) done
+Select jobs to execute...
+
+[Sun Apr  9 19:17:53 2023]
+rule graph_loss:
+    input: ../results/val_loss/MLP.csv, ../results/val_loss/LSTM.csv, ../results/val_loss/CNN.csv, ../results/val_loss/LSTMFCN.csv
+    output: ../results/graphs/loss.png
+    log: logs/graph_loss/graph_loss.log
+    jobid: 50
+    reason: Missing output files: ../results/graphs/loss.png
+    resources: tmpdir=/tmp
+
+[Sun Apr  9 19:17:53 2023]
+rule perfs:
+    input: ../results/preds/synth_test_0_CNN_product.npy, ../resources/test/pulses/synth_test_0.npy, ../resources/test/annots/synth_test_0.npy
+    output: ../results/errors/synth_test_0_CNN_product.csv
+    log: logs/perfs/synth_test_0_CNN_product.log
+    jobid: 40
+    reason: Code has changed since last execution
+    wildcards: f=synth_test_0, nn=CNN, c=product
+    resources: tmpdir=/tmp
+
+Select jobs to execute...
+[Sun Apr  9 19:17:53 2023]
+Finished job 38.
+9 of 19 steps (47%) done
+
+[Sun Apr  9 19:17:53 2023]
+rule perfs:
+    input: ../results/preds/synth_test_1_LSTM_nothing.npy, ../resources/test/pulses/synth_test_1.npy, ../resources/test/annots/synth_test_1.npy
+    output: ../results/errors/synth_test_1_LSTM_nothing.csv
+    log: logs/perfs/synth_test_1_LSTM_nothing.log
+    jobid: 15
+    reason: Code has changed since last execution
+    wildcards: f=synth_test_1, nn=LSTM, c=nothing
+    resources: tmpdir=/tmp
+
+[Sun Apr  9 19:17:53 2023]
+Finished job 21.
+10 of 19 steps (53%) done
+[Sun Apr  9 19:17:54 2023]
+Finished job 9.
+11 of 19 steps (58%) done
+[Sun Apr  9 19:17:54 2023]
+Finished job 43.
+12 of 19 steps (63%) done
+[Sun Apr  9 19:17:54 2023]
+Finished job 27.
+13 of 19 steps (68%) done
+[Sun Apr  9 19:17:54 2023]
+Finished job 40.
+14 of 19 steps (74%) done
+[Sun Apr  9 19:17:54 2023]
+Finished job 35.
+15 of 19 steps (79%) done
+[Sun Apr  9 19:17:54 2023]
+Finished job 50.
+16 of 19 steps (84%) done
+[Sun Apr  9 19:17:54 2023]
+Finished job 15.
+17 of 19 steps (89%) done
+Select jobs to execute...
+
+[Sun Apr  9 19:17:54 2023]
+rule merge:
+    input: ../results/errors/synth_test_1_MLP_product.csv, ../results/errors/synth_test_1_MLP_nothing.csv, ../results/errors/synth_test_1_LSTM_product.csv, ../results/errors/synth_test_1_LSTM_nothing.csv, ../results/errors/synth_test_1_CNN_product.csv, ../results/errors/synth_test_1_CNN_nothing.csv, ../results/errors/synth_test_1_LSTMFCN_product.csv, ../results/errors/synth_test_1_LSTMFCN_nothing.csv, ../results/errors/synth_test_0_MLP_product.csv, ../results/errors/synth_test_0_MLP_nothing.csv, ../results/errors/synth_test_0_LSTM_product.csv, ../results/errors/synth_test_0_LSTM_nothing.csv, ../results/errors/synth_test_0_CNN_product.csv, ../results/errors/synth_test_0_CNN_nothing.csv, ../results/errors/synth_test_0_LSTMFCN_product.csv, ../results/errors/synth_test_0_LSTMFCN_nothing.csv
+    output: ../results/graphs/vt.png, ../results/graphs/ratio.png, ../results/graphs/clasf.png, ../results/graphs/metrics.csv
+    log: logs/merge/merge.log
+    jobid: 1
+    reason: Missing output files: ../results/graphs/metrics.csv, ../results/graphs/vt.png, ../results/graphs/clasf.png, ../results/graphs/ratio.png; Input files updated by another job: ../results/errors/synth_test_0_CNN_nothing.csv, ../results/errors/synth_test_0_LSTMFCN_nothing.csv, ../results/errors/synth_test_0_CNN_product.csv, ../results/errors/synth_test_0_MLP_product.csv, ../results/errors/synth_test_1_MLP_product.csv, ../results/errors/synth_test_1_LSTM_nothing.csv, ../results/errors/synth_test_0_LSTMFCN_product.csv, ../results/errors/synth_test_0_LSTM_product.csv, ../results/errors/synth_test_1_CNN_nothing.csv, ../results/errors/synth_test_1_LSTMFCN_nothing.csv, ../results/errors/synth_test_0_LSTM_nothing.csv, ../results/errors/synth_test_1_CNN_product.csv, ../results/errors/synth_test_1_LSTM_product.csv, ../results/errors/synth_test_0_MLP_nothing.csv, ../results/errors/synth_test_1_LSTMFCN_product.csv, ../results/errors/synth_test_1_MLP_nothing.csv
+    resources: tmpdir=/tmp
+
+[Sun Apr  9 19:17:56 2023]
+Finished job 1.
+18 of 19 steps (95%) done
+Select jobs to execute...
+
+[Sun Apr  9 19:17:56 2023]
+localrule all:
+    input: ../results/graphs/vt.png, ../results/graphs/ratio.png, ../results/graphs/loss.png, ../results/graphs/clasf.png, ../results/graphs/metrics.csv
+    jobid: 0
+    reason: Input files updated by another job: ../results/graphs/metrics.csv, ../results/graphs/vt.png, ../results/graphs/loss.png, ../results/graphs/clasf.png, ../results/graphs/ratio.png
+    resources: tmpdir=/tmp
+
+[Sun Apr  9 19:17:56 2023]
+Finished job 0.
+19 of 19 steps (100%) done
+Complete log: .snakemake/log/2023-04-09T191750.835637.snakemake.log

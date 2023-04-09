@@ -1,0 +1,5 @@
+Building DAG of jobs...
+MissingInputException in rule all in file /home/donatien/Desktop/pipeline/workflow/Snakefile, line 18:
+Missing input files for rule all:
+    affected files:
+        ../results/graphs/hz.png
