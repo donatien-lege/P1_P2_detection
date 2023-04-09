@@ -96,7 +96,7 @@ def merge(files, hz, vt, ratio, clasf, metrics):
     plt.savefig(clasf, bbox_inches='tight')
     df_tot = pd.concat((he, ve, re, df_classif), axis=1)
     print(df_tot)
-    df_classif.to_csv(metrics)
+    df_tot.to_csv(metrics)
 
 
 merge(snakemake.input["error"],
