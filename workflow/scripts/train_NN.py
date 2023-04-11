@@ -7,6 +7,7 @@ from torch.utils.data import random_split
 import torch.optim as optim
 import numpy as np
 import pandas as pd
+torch.manual_seed(17)
 
 #Params
 BATCH = snakemake.config['batch']
